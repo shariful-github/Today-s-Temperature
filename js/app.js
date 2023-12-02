@@ -24,4 +24,10 @@ document.getElementById('btn-search').addEventListener('click', function(){
     searchField.value = '';
 })
 
+document.getElementById('search-field').addEventListener('keypress', function(event){
+    if(event.key === 'Enter'){
+        event.preventDefault();
+        document.getElementById('btn-search').click();
+    }
+})
 loadTemparature('dhaka');
