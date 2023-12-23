@@ -22,7 +22,15 @@
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input id="search-field" type="text" class="form-control" placeholder="Enter your city name for Weather ...">
+                <input list="datalistOptions" id="search-field" type="text" class="form-control"
+                    placeholder="Enter your city name for Weather...">
+                <datalist id="datalistOptions">
+                    <option value="New York">
+                    <option value="Sydney">
+                    <option value="Paris">
+                    <option value="Dhaka">
+                    <option value="Singapore">
+                </datalist>
                 <div class="input-group-append">
                     <button id="btn-search" type="button" class="btn btn-danger">Search</button>
                 </div>
